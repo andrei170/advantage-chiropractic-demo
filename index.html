@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advantage Chiropractic Clinic of Green Bay &middot; Independent, Owner-Operated Chiropractic Care &middot; 10-Time Best of The Bay &middot; Since 1993</title>
+<meta name="description" content="Advantage Chiropractic Clinic of Green Bay has cared for patients on South Ashland Avenue since 1993. Independent and owner-operated for 33 years. Ten consecutive Best of The Bay wins. Dr. Cheryl Metzler, DC, DABCI (Diplomate of the American Board of Chiropractic Internists), Dr. Jon Swanson (Webster Technique, FMT, Rocktape), and Dr. Alexander Kirchner (Gonstead, Diversified, Activator, Cox Flexion Distraction). Chiropractic care, prenatal and pediatric chiropractic, and chiropractic internal medicine for Green Bay and Northeast Wisconsin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #5b8aa6;
+    --sky-soft: #a9c6d6;
+    --navy: #1f3a52;
+    --navy-deep: #142639;
+    --cream: #f6f1e8;
+    --bone: #ece4d4;
+    --warm: #c9a878;
+    --warm-deep: #a8895c;
+    --clay: #a85e3e;
+    --clay-deep: #8a4a30;
+    --rose: #c98f74;
+    --ink: #1f1c17;
+    --ink-soft: #4b463d;
+    --line: #d9d0bf;
+    --white: #ffffff;
+    --display: 'Bebas Neue', sans-serif;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(246, 241, 232, 0.96); backdrop-filter: blur(10px);
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .brand {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 600; letter-spacing: 0.3px;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+  .brand small {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--warm-deep);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .nav-links { display: flex; gap: 26px; font-size: 14px; font-weight: 500; }
+  .nav-links a { color: var(--navy); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--clay); }
+  .cta-btn {
+    background: var(--clay); color: var(--white);
+    padding: 13px 26px; border-radius: 2px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; transition: all 0.25s;
+    border: 1px solid var(--clay);
+    display: inline-block;
+  }
+  .cta-btn:hover { background: var(--clay-deep); border-color: var(--clay-deep); transform: translateY(-1px); }
+  .cta-btn-ghost {
+    background: transparent; color: var(--navy); border: 1px solid var(--navy);
+  }
+  .cta-btn-ghost:hover { background: var(--navy); color: var(--cream); }
+  @media (max-width: 940px) { .nav-links { display: none; } }
+
+  /* Hero */
+  .hero {
+    padding: 100px 0 92px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--cream);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -10%; right: -10%;
+    width: 720px; height: 720px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.20), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -20%; left: -10%;
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(91, 138, 166, 0.28), transparent 65%);
+    filter: blur(60px); pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.25fr 1fr; gap: 72px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 26px;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(40px, 5.2vw, 64px); line-height: 1.06;
+    margin-bottom: 26px; letter-spacing: -0.015em;
+    color: var(--cream);
+  }
+  .hero h1 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .hero-sub {
+    font-size: 19px; color: rgba(246, 241, 232, 0.85);
+    margin-bottom: 36px; max-width: 600px; line-height: 1.6;
+  }
+  .hero-actions { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+  .hero-phone { color: rgba(246, 241, 232, 0.78); font-size: 13px; letter-spacing: 0.08em; }
+  .hero-phone strong { color: var(--cream); font-size: 17px; display: block; font-family: var(--serif); font-weight: 600; letter-spacing: 0; margin-top: 2px; }
+
+  /* Hero trust strip */
+  .hero-strip {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px;
+  }
+  .hero-strip .chip {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(246, 241, 232, 0.9); font-weight: 600;
+    padding: 8px 14px;
+    border: 1px solid rgba(201, 168, 120, 0.4);
+    border-radius: 2px;
+    background: rgba(201, 168, 120, 0.08);
+  }
+
+  .hero-card {
+    position: relative;
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 40px 36px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.28);
+    border-top: 4px solid var(--warm);
+  }
+  .hero-card-tag {
+    font-family: var(--display);
+    font-size: 14px; letter-spacing: 0.2em;
+    color: var(--clay); font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .hero-card h3 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 29px; color: var(--navy); line-height: 1.18;
+    margin-bottom: 16px;
+  }
+  .hero-card-divider {
+    width: 56px; height: 2px; background: var(--warm);
+    margin: 18px 0 22px;
+  }
+  .hero-card-stat {
+    display: flex; gap: 18px; padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-card-stat:last-child { border-bottom: none; }
+  .hero-card-stat .num {
+    font-family: var(--serif); font-size: 38px; font-weight: 600;
+    color: var(--clay); line-height: 1; min-width: 66px;
+  }
+  .hero-card-stat .lbl {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.4; padding-top: 6px;
+  }
+  .hero-card-stat .lbl strong { color: var(--navy); display: block; font-size: 14px; }
+
+  /* Trust band */
+  .trust {
+    background: var(--white); padding: 44px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;
+    text-align: center;
+  }
+  @media (max-width: 780px) { .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+  .trust-item .num {
+    font-family: var(--serif); font-size: 42px; font-weight: 600;
+    color: var(--navy); display: block; line-height: 1;
+  }
+  .trust-item .num em { color: var(--clay); font-style: normal; }
+  .trust-item .lbl {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 10px; font-weight: 600;
+  }
+
+  /* Section base */
+  section { padding: 100px 0; }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--clay); margin-bottom: 18px;
+  }
+  .section-title {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(34px, 4.4vw, 52px); line-height: 1.08; color: var(--navy);
+    margin-bottom: 20px; letter-spacing: -0.015em;
+  }
+  .section-title em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .section-sub { font-size: 18px; color: var(--ink-soft); line-height: 1.6; }
+
+  /* Heritage band */
+  .heritage { background: var(--bone); }
+  .heritage-grid {
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; align-items: center;
+  }
+  @media (max-width: 980px) { .heritage-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .heritage h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(34px, 4.2vw, 50px); line-height: 1.1;
+    color: var(--navy); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .heritage h2 em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .heritage p {
+    font-size: 17px; color: var(--ink-soft); margin-bottom: 18px; line-height: 1.7;
+  }
+  .heritage-quote {
+    font-family: var(--serif); font-style: italic;
+    font-size: 22px; color: var(--navy); padding: 26px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 30px 0;
+    line-height: 1.45;
+  }
+  .heritage-img {
+    aspect-ratio: 4/5; border-radius: 4px; overflow: hidden;
+    background: linear-gradient(135deg, var(--sky), var(--navy));
+    position: relative;
+    box-shadow: 0 24px 56px rgba(31, 58, 82, 0.22);
+  }
+  .heritage-img-inner {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: var(--cream); padding: 40px; text-align: center;
+  }
+  .heritage-img-inner .label {
+    font-family: var(--display); font-size: 14px; letter-spacing: 0.2em;
+    color: var(--warm); margin-bottom: 16px;
+  }
+  .heritage-img-inner .year {
+    font-family: var(--serif); font-size: 64px; font-style: italic; line-height: 1;
+    color: var(--cream); margin-bottom: 12px;
+  }
+  .heritage-img-inner .quote {
+    font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.35;
+  }
+
+  /* Stage band (Best of The Bay + DABCI credential moat) */
+  .stage { background: var(--navy); color: var(--cream); position: relative; overflow: hidden; }
+  .stage::before {
+    content: ''; position: absolute; top: -20%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.20), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .stage .section-eyebrow { color: var(--warm); }
+  .stage-grid {
+    display: grid; grid-template-columns: 1fr 1.15fr; gap: 64px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  @media (max-width: 980px) { .stage-grid { grid-template-columns: 1fr; gap: 44px; } }
+  .stage-img {
+    aspect-ratio: 1/1; border-radius: 4px; overflow: hidden;
+    background: linear-gradient(155deg, var(--clay), var(--navy-deep));
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 44px; text-align: center;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+  }
+  .stage-img-tag {
+    font-family: var(--display); font-size: 14px; letter-spacing: 0.22em;
+    color: var(--warm); margin-bottom: 16px;
+  }
+  .stage-img-headline {
+    font-family: var(--serif); font-size: 36px; font-style: italic; line-height: 1.15;
+    color: var(--cream); margin-bottom: 14px;
+  }
+  .stage-img-quote {
+    font-family: var(--serif); font-size: 19px; font-style: italic; line-height: 1.4;
+    color: rgba(246, 241, 232, 0.92);
+  }
+  .stage h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(32px, 4.2vw, 50px); line-height: 1.1;
+    color: var(--cream); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .stage h2 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .stage p {
+    font-size: 17px; color: rgba(246, 241, 232, 0.84); margin-bottom: 18px; line-height: 1.7;
+  }
+  .stage-pull {
+    font-family: var(--serif); font-style: italic;
+    font-size: 23px; color: var(--cream); padding: 24px 0;
+    border-top: 1px solid rgba(201, 168, 120, 0.3);
+    border-bottom: 1px solid rgba(201, 168, 120, 0.3);
+    margin: 28px 0; line-height: 1.4;
+  }
+  .stage-list {
+    list-style: none; margin-top: 16px;
+  }
+  .stage-list li {
+    font-size: 15px; color: rgba(246, 241, 232, 0.92);
+    padding: 9px 0 9px 26px; position: relative;
+    border-bottom: 1px solid rgba(201, 168, 120, 0.16);
+  }
+  .stage-list li:last-child { border-bottom: none; }
+  .stage-list li::before {
+    content: '\2756'; position: absolute; left: 0; top: 9px;
+    color: var(--warm); font-weight: 700;
+  }
+  .stage-list strong { color: var(--cream); }
+
+  /* Services grid */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  }
+  @media (max-width: 1040px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) { .services-grid { grid-template-columns: 1fr; } }
+  .service {
+    background: var(--white); padding: 34px 30px; border-radius: 4px;
+    border: 1px solid var(--line); transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .service::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--warm); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.35s;
+  }
+  .service:hover { border-color: var(--warm); transform: translateY(-4px); box-shadow: 0 18px 44px rgba(31, 58, 82, 0.10); }
+  .service:hover::before { transform: scaleX(1); }
+  .service.featured { border-color: var(--warm); background: linear-gradient(180deg, var(--white) 0%, #fbf6ec 100%); }
+  .service.featured::before { transform: scaleX(1); background: var(--clay); }
+  .service-tag {
+    display: inline-block; font-family: var(--display);
+    font-size: 12px; letter-spacing: 0.2em;
+    color: var(--clay); margin-bottom: 14px;
+  }
+  .service h3 {
+    font-family: var(--serif); font-size: 25px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.2;
+  }
+  .service-meta {
+    font-size: 13px; color: var(--ink-soft); margin-bottom: 18px;
+    padding-bottom: 16px; border-bottom: 1px solid var(--line);
+  }
+  .service-meta strong { color: var(--navy); }
+  .service p { color: var(--ink-soft); font-size: 15px; margin-bottom: 22px; line-height: 1.65; }
+  .service ul { list-style: none; margin-bottom: 4px; }
+  .service li {
+    font-size: 14px; color: var(--ink-soft); padding-left: 24px;
+    position: relative; margin-bottom: 9px; line-height: 1.55;
+  }
+  .service li::before {
+    content: '\2713'; position: absolute; left: 0; top: 0;
+    color: var(--sky); font-weight: 700; font-size: 14px;
+  }
+
+  /* Doctors band (mirrors locations band) */
+  .locations { background: var(--bone); }
+  .locations-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+  }
+  @media (max-width: 980px) { .locations-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+  .location-card {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; overflow: hidden;
+    transition: all 0.3s;
+  }
+  .location-card:hover { border-color: var(--warm); transform: translateY(-4px); box-shadow: 0 18px 44px rgba(31, 58, 82, 0.10); }
+  .location-banner {
+    aspect-ratio: 4/3;
+    background: linear-gradient(160deg, var(--sky-soft), var(--navy));
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 24px; text-align: center;
+  }
+  .location-banner.flagship { background: linear-gradient(160deg, var(--warm), var(--navy-deep)); }
+  .location-banner.harbor { background: linear-gradient(160deg, var(--sky), var(--navy)); }
+  .location-banner.occupational { background: linear-gradient(160deg, var(--clay), var(--navy-deep)); }
+  .location-banner-tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.22em;
+    color: var(--cream); margin-bottom: 10px;
+  }
+  .location-banner-name {
+    font-family: var(--serif); font-size: 26px; font-weight: 600;
+    color: var(--white); line-height: 1.2;
+  }
+  .location-banner-meta {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85); margin-top: 8px; font-weight: 600;
+  }
+  .location-body { padding: 28px 28px 30px; }
+  .location-spec {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--clay); font-weight: 700; margin-bottom: 12px;
+  }
+  .location-body h3 {
+    font-family: var(--serif); font-size: 23px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.25;
+  }
+  .location-body p {
+    font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 12px;
+  }
+  .location-detail {
+    list-style: none; padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .location-detail li {
+    font-size: 13px; color: var(--ink-soft);
+    padding: 6px 0; padding-left: 22px; position: relative;
+  }
+  .location-detail li::before {
+    content: '\2022'; position: absolute; left: 6px; top: 4px;
+    color: var(--warm); font-weight: 700;
+  }
+  .location-detail strong { color: var(--navy); }
+
+  /* Independent band */
+  .independent { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .independent-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+  }
+  @media (max-width: 920px) { .independent-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .independent h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(32px, 4vw, 46px); line-height: 1.12; color: var(--navy);
+    margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .independent h2 em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .independent p { font-size: 17px; color: var(--ink-soft); margin-bottom: 16px; line-height: 1.7; }
+  .independent-points { list-style: none; margin-top: 24px; }
+  .independent-points li {
+    font-size: 15px; color: var(--ink-soft); padding: 12px 0 12px 30px;
+    position: relative; border-bottom: 1px solid var(--line); line-height: 1.6;
+  }
+  .independent-points li:last-child { border-bottom: none; }
+  .independent-points li::before {
+    content: '\2713'; position: absolute; left: 0; top: 12px;
+    color: var(--clay); font-weight: 700;
+  }
+  .independent-points strong { color: var(--navy); }
+  .independent-side {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 4px; padding: 40px 36px;
+    border-top: 4px solid var(--warm);
+  }
+  .independent-side .tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.2em;
+    color: var(--clay); margin-bottom: 16px;
+  }
+  .independent-side h3 {
+    font-family: var(--serif); font-size: 27px; font-weight: 600;
+    color: var(--navy); margin-bottom: 14px; line-height: 1.2;
+  }
+  .independent-side p { font-size: 15px; color: var(--ink-soft); margin-bottom: 0; line-height: 1.7; }
+  .independent-side .divider { width: 56px; height: 2px; background: var(--warm); margin: 18px 0; }
+
+  /* Audit table band */
+  .audit { background: var(--cream); }
+  .audit-table {
+    max-width: 1080px; margin: 0 auto;
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; overflow: hidden;
+  }
+  .audit-row {
+    display: grid; grid-template-columns: 1fr 1.2fr 1fr;
+    padding: 22px 28px; border-bottom: 1px solid var(--line);
+    align-items: center; gap: 24px;
+  }
+  .audit-row:last-child { border-bottom: none; }
+  .audit-row.head {
+    background: var(--bone);
+    font-family: var(--display);
+    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--navy); font-weight: 400;
+  }
+  .audit-row .query {
+    font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--navy);
+    line-height: 1.3;
+  }
+  .audit-row .finding { font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
+  .audit-row .winner { font-size: 13px; color: var(--ink-soft); line-height: 1.5; font-style: italic; }
+  @media (max-width: 820px) {
+    .audit-row { grid-template-columns: 1fr; gap: 8px; padding: 18px 22px; }
+    .audit-row.head { display: none; }
+    .audit-row .query::before { content: 'Query: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+    .audit-row .finding::before { content: 'Advantage today: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+    .audit-row .winner::before { content: 'Cited instead: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+  }
+
+  /* Areas */
+  .areas { background: var(--bone); }
+  .areas-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    max-width: 980px; margin: 0 auto;
+  }
+  @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+  .area-pill {
+    padding: 18px 20px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .area-pill:hover { border-color: var(--warm); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(31, 58, 82, 0.08); }
+  .area-pill .city {
+    font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--navy);
+    line-height: 1.2;
+  }
+  .area-pill .miles {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 4px; font-weight: 600;
+  }
+  .areas-note {
+    text-align: center; margin-top: 40px;
+    font-size: 14px; color: var(--ink-soft); font-style: italic;
+  }
+
+  /* New patients band */
+  .newpt { background: var(--cream); }
+  .newpt-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    margin-top: 12px;
+  }
+  @media (max-width: 880px) { .newpt-grid { grid-template-columns: 1fr; max-width: 520px; margin: 12px auto 0; } }
+  .newpt-step {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; padding: 32px 28px;
+    position: relative;
+  }
+  .newpt-step .step-num {
+    font-family: var(--serif); font-size: 44px; font-weight: 600;
+    color: var(--warm); line-height: 1; margin-bottom: 14px;
+  }
+  .newpt-step h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px; line-height: 1.25;
+  }
+  .newpt-step p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* FAQ */
+  .faq { background: var(--bone); }
+  .faq-grid {
+    max-width: 900px; margin: 0 auto;
+    display: grid; gap: 18px;
+  }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 32px;
+    transition: all 0.25s;
+  }
+  .faq-item:hover { border-color: var(--warm); }
+  .faq-item h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.25;
+  }
+  .faq-item p {
+    font-size: 15px; color: var(--ink-soft); line-height: 1.7;
+  }
+
+  /* Why now band */
+  .whynow { background: var(--white); }
+  .whynow-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+  }
+  @media (max-width: 980px) { .whynow-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+  .whynow-card {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 4px; padding: 34px 30px;
+    border-top: 3px solid var(--warm);
+  }
+  .whynow-card .tag {
+    font-family: var(--display); font-size: 12px; letter-spacing: 0.22em;
+    color: var(--clay); margin-bottom: 14px;
+  }
+  .whynow-card h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.3;
+  }
+  .whynow-card p { font-size: 15px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* Final CTA */
+  .final-cta {
+    background: linear-gradient(135deg, var(--clay) 0%, var(--clay-deep) 100%);
+    color: var(--cream); text-align: center; padding: 110px 0;
+    position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: ''; position: absolute; top: -30%; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.28), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .final-cta .container { position: relative; z-index: 2; }
+  .final-cta h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(38px, 5vw, 56px); line-height: 1.08;
+    margin-bottom: 22px; letter-spacing: -0.015em;
+  }
+  .final-cta h2 em { color: var(--cream); font-style: italic; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(246,241,232,0.4); text-underline-offset: 6px; }
+  .final-cta p {
+    font-size: 19px; color: rgba(246, 241, 232, 0.92);
+    max-width: 660px; margin: 0 auto 44px; line-height: 1.6;
+  }
+  .final-actions {
+    display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;
+    align-items: center;
+  }
+  .cta-btn-cream {
+    background: var(--cream); color: var(--clay); border-color: var(--cream);
+  }
+  .cta-btn-cream:hover { background: var(--white); color: var(--clay-deep); border-color: var(--white); }
+  .phone-large {
+    font-family: var(--serif); font-size: 28px; font-weight: 600;
+    color: var(--cream); display: flex; align-items: center; gap: 14px;
+  }
+  .phone-large small {
+    display: block; font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(246, 241, 232, 0.75); font-weight: 600; margin-bottom: 2px;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--navy-deep); color: rgba(246, 241, 232, 0.7);
+    padding: 72px 0 36px;
+  }
+  .foot-grid {
+    display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 52px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+  @media (max-width: 580px) { .foot-grid { grid-template-columns: 1fr; } }
+  footer h5 {
+    color: var(--warm); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 18px; font-weight: 700;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 9px; font-size: 14px; line-height: 1.5; }
+  footer a:hover { color: var(--warm); }
+  .foot-bottom {
+    border-top: 1px solid rgba(201, 168, 120, 0.18); padding-top: 28px;
+    font-size: 12px; letter-spacing: 0.05em; line-height: 1.7;
+  }
+  .foot-bottom .row {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px;
+    margin-bottom: 18px;
+  }
+  .foot-disclaimer {
+    font-size: 12px; color: rgba(246, 241, 232, 0.5); line-height: 1.7;
+    border-top: 1px solid rgba(201, 168, 120, 0.12); padding-top: 18px;
+  }
+  .foot-brand {
+    font-family: var(--serif); font-size: 24px; color: var(--cream);
+    margin-bottom: 16px; font-weight: 600; line-height: 1.2;
+  }
+  .foot-brand small {
+    display: block; font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); font-weight: 600; margin-top: 4px;
+  }
+  .foot-tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.2em;
+    color: var(--warm); margin-bottom: 18px;
+  }
+  .signoff-link {
+    color: var(--warm); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .signoff-link:hover { color: var(--cream); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="brand">
+      Advantage Chiropractic Clinic
+      <small>Green Bay &middot; Since 1993 &middot; 10-Time Best of The Bay</small>
+    </a>
+    <nav class="nav-links">
+      <a href="#heritage">Our Story</a>
+      <a href="#stage">Best of The Bay</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#services">Services</a>
+      <a href="#audit">Audit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="cta-btn">Request a Visit</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">Green Bay &middot; Wisconsin &middot; Since 1993 &middot; 10-Time Best of The Bay Winner</div>
+      <h1>The independent chiropractic clinic Green Bay has voted Best of The Bay <em>ten years in a row.</em></h1>
+      <p class="hero-sub">Advantage Chiropractic Clinic of Green Bay has cared for patients on South Ashland Avenue since 1993. Three doctors, more than 65 years of combined clinical experience, and a community vote that has picked this clinic Best of The Bay ten years running. General chiropractic, prenatal and pediatric chiropractic via Webster Technique, and chiropractic internal medicine.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="cta-btn">Request a Visit</a>
+        <div class="hero-phone">Advantage Chiropractic<br><strong>(920) 432-7774</strong></div>
+      </div>
+      <div class="hero-strip">
+        <span class="chip">Founded 1993</span>
+        <span class="chip">10-Time Best of The Bay</span>
+        <span class="chip">DABCI Internist on Staff</span>
+        <span class="chip">Webster Technique Certified</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-tag">An Independent Practice</div>
+      <h3>Independent. Owner-operated. Voted Best in Green Bay a decade running.</h3>
+      <div class="hero-card-divider"></div>
+      <div class="hero-card-stat">
+        <span class="num">33</span>
+        <div class="lbl"><strong>Years on South Ashland Avenue</strong>Founded 1993, same address, same independent ownership.</div>
+      </div>
+      <div class="hero-card-stat">
+        <span class="num">10</span>
+        <div class="lbl"><strong>Consecutive Best of The Bay wins</strong>Community-voted, Press-Gazette readership, ten years unbroken.</div>
+      </div>
+      <div class="hero-card-stat">
+        <span class="num">3</span>
+        <div class="lbl"><strong>Doctors, 65+ combined years of experience</strong>Dr. Metzler DABCI, Dr. Swanson (Webster), Dr. Kirchner (four techniques).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <span class="num">1993</span>
+      <div class="lbl">Year Founded</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">33<em>+</em></span>
+      <div class="lbl">Years Serving Green Bay</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">10</span>
+      <div class="lbl">Best of The Bay Wins</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">3</span>
+      <div class="lbl">Doctors, One Clinic</div>
+    </div>
+  </div>
+</section>
+
+<section id="heritage" class="heritage">
+  <div class="container heritage-grid">
+    <div class="heritage-img">
+      <div class="heritage-img-inner">
+        <span class="label">Founded</span>
+        <div class="year">1993</div>
+        <p class="quote">"South Ashland Avenue. Three decades. One clinic."</p>
+      </div>
+    </div>
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">Our Story</div>
+      <h2>A Green Bay chiropractic clinic, on the same street, <em>for 33 years.</em></h2>
+      <p>Advantage Chiropractic Clinic of Green Bay opened in 1993 at 1804 South Ashland Avenue, and the clinic has cared for Northeast Wisconsin patients from that address ever since. Thirty-three years of continuous independent practice in a city that has watched chain franchises arrive, expand, and standardize the chiropractic experience.</p>
+      <p>The continuity matters. A patient who came in for a low-back consultation in 2003 can come back in 2026 and still be cared for under the same clinic name, by a team that has been working together long enough to share notes across cases. That kind of tenure is rare in independent chiropractic, and it is the foundation that lets the clinic offer a credential set most multi-doctor groups in the state cannot match in one address.</p>
+      <div class="heritage-quote">"Ten Best of The Bay wins in a row. A DABCI internist. A Webster-certified prenatal specialist. A four-technique chiropractic stack. All on South Ashland Avenue."</div>
+      <p>The clinic combines a DABCI diplomate (Dr. Cheryl Metzler), a Webster Technique-certified prenatal and pediatric doctor (Dr. Jon Swanson, also FMT and Rocktape), and a four-technique chiropractor (Dr. Alexander Kirchner: Gonstead, Diversified, Activator, and Cox Flexion Distraction). The community has noticed. The Press-Gazette readership has voted the clinic Best of The Bay ten years running, an unbroken streak in a category where ten years is a generation of practitioners.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stage" class="stage">
+  <div class="container stage-grid">
+    <div class="stage-img">
+      <div class="stage-img-tag">Best of The Bay</div>
+      <div class="stage-img-headline">Ten years in a row. Voted by Green Bay.</div>
+      <p class="stage-img-quote">"The chiropractic clinic the Press-Gazette readership has picked Best of The Bay every year for a decade. Plus a DABCI credential most patients have never heard of and almost no other Wisconsin chiropractor holds."</p>
+    </div>
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">A credential set the chiropractic category almost never produces</div>
+      <h2>Ten consecutive Best of The Bay wins, <em>plus a DABCI internist</em> most Wisconsin patients cannot reach locally.</h2>
+      <p>Best of The Bay is the Green Bay Press-Gazette's community-voted recognition program, decided by readership ballot. Ten years in a row is exceptional in a category where one or two wins is the norm and where ten years is a generation of practitioners. It is one of the strongest local trust signals a Green Bay business can hold, and the AI search engines now recommending chiropractors to patients are built to weight that kind of decade-spanning record heavily, once it is structured in a way they can read.</p>
+      <ul class="stage-list">
+        <li><strong>Dr. Cheryl Metzler, DC, DABCI</strong> &middot; Diplomate of the American Board of Chiropractic Internists, a post-graduate credential for chiropractic internal medicine</li>
+        <li><strong>Dr. Jon Swanson, DC</strong> &middot; Webster Technique certified (prenatal and pediatric chiropractic), plus FMT and Rocktape</li>
+        <li><strong>Dr. Alexander Kirchner, DC</strong> &middot; Four chiropractic techniques: Gonstead, Diversified, Activator, Cox Flexion Distraction</li>
+        <li><strong>Best of The Bay 2016 through 2025</strong> &middot; Ten consecutive community-voted wins from the Press-Gazette readership</li>
+        <li><strong>65+ combined years</strong> &middot; Three doctors working together on the same case roster</li>
+        <li><strong>Same address since 1993</strong> &middot; 1804 South Ashland Avenue, Green Bay, independent the entire time</li>
+      </ul>
+      <div class="stage-pull">"A 33-year clinic, voted Best in Green Bay ten years running, with a DABCI internist, a Webster-certified prenatal specialist, and a four-technique chiropractor. None of it is in structured data."</div>
+      <p>The credential set is real. The award streak is real. The DABCI is real. What is missing is the markup that tells a search engine those things are real, so that the engines now choosing which chiropractors to recommend can actually surface the clinic for the queries patients run. That is what this page exists to show.</p>
+    </div>
+  </div>
+</section>
+
+<section id="doctors" class="locations">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Three Doctors</div>
+      <h2 class="section-title">Three doctors. <em>One clinic.</em></h2>
+      <p class="section-sub">Three chiropractors who together hold more than 65 years of combined clinical experience, on the same case roster, in the same clinic. A DABCI internist, a Webster-certified prenatal and pediatric specialist, and a four-technique chiropractor. The kind of credential breadth most multi-doctor groups in Wisconsin cannot match in one address.</p>
+    </div>
+
+    <div class="locations-grid">
+      <div class="location-card">
+        <div class="location-banner flagship">
+          <div class="location-banner-tag">DABCI Internist</div>
+          <div class="location-banner-name">Dr. Cheryl Metzler</div>
+          <div class="location-banner-meta">DC, DABCI</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Diplomate, American Board of Chiropractic Internists</div>
+          <h3>The chiropractic internist most Wisconsin patients cannot reach locally.</h3>
+          <p>Dr. Metzler holds the DABCI diplomate, a post-graduate credential that qualifies her to consult on internal-disorder presentations alongside spinal care, scoped to what the credentialing body authorizes. The diplomate is held by a short list of chiropractors in Wisconsin, statewide.</p>
+          <ul class="location-detail">
+            <li><strong>Credential</strong> &middot; Doctor of Chiropractic + DABCI diplomate</li>
+            <li><strong>Certifying body</strong> &middot; American Board of Chiropractic Internists</li>
+            <li><strong>Scope</strong> &middot; Chiropractic internal-disorder consultation</li>
+            <li><strong>Clinic role</strong> &middot; Treating doctor, Advantage Chiropractic Clinic</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-banner harbor">
+          <div class="location-banner-tag">Webster Technique &middot; FMT &middot; Rocktape</div>
+          <div class="location-banner-name">Dr. Jon Swanson</div>
+          <div class="location-banner-meta">DC, Webster Certified</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Prenatal and Pediatric Chiropractic</div>
+          <h3>The Webster Technique specialist for Green Bay families.</h3>
+          <p>Dr. Swanson is certified in the Webster Technique, a recognized prenatal chiropractic certification recognized by the International Chiropractic Pediatric Association. He also holds FMT and Rocktape credentials. A small set of Webster-certified chiropractors practice in the Green Bay metro, and Dr. Swanson is among them.</p>
+          <ul class="location-detail">
+            <li><strong>Certification</strong> &middot; Webster Technique (prenatal and pediatric)</li>
+            <li><strong>Additional credentials</strong> &middot; FMT, Rocktape</li>
+            <li><strong>Patient focus</strong> &middot; Prenatal patients, families, pediatric chiropractic</li>
+            <li><strong>Clinic role</strong> &middot; Treating doctor, Advantage Chiropractic Clinic</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-banner occupational">
+          <div class="location-banner-tag">Four-Technique Stack</div>
+          <div class="location-banner-name">Dr. Alex Kirchner</div>
+          <div class="location-banner-meta">DC</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Gonstead &middot; Diversified &middot; Activator &middot; Cox Flexion Distraction</div>
+          <h3>Four chiropractic techniques, in one doctor.</h3>
+          <p>Dr. Kirchner works across four distinct chiropractic techniques: Gonstead, Diversified, Activator, and Cox Flexion Distraction. That breadth lets a single doctor match the technique to the patient, rather than forcing every patient through one standardized protocol. Useful for low-back disc cases, patients who prefer a low-force adjustment, and athletic populations alike.</p>
+          <ul class="location-detail">
+            <li><strong>Techniques</strong> &middot; Gonstead, Diversified, Activator, Cox Flexion Distraction</li>
+            <li><strong>Patient match</strong> &middot; Technique chosen for the case, not the clinic protocol</li>
+            <li><strong>Common cases</strong> &middot; Low back, neck, athletic and family chiropractic</li>
+            <li><strong>Clinic role</strong> &middot; Treating doctor, Advantage Chiropractic Clinic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">What We Recommend</div>
+      <h2 class="section-title">The infrastructure pieces <em>this clinic is missing.</em></h2>
+      <p class="section-sub">A demo concept of the AEO and structured-data work that would bring a 33-year independent chiropractic clinic with ten Best of The Bay wins, a DABCI internist, and a Webster-certified prenatal specialist to the same AI-search visibility a national franchise location currently enjoys.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service featured">
+        <div class="service-tag">Authority Anchor</div>
+        <h3>Best of The Bay Awards Page</h3>
+        <div class="service-meta"><strong>Award schema, year by year</strong> &middot; Ten consecutive wins, structured for AI search</div>
+        <p>A dedicated awards page covering all ten Best of The Bay wins, with Award schema tying each annual win to the year and to the Green Bay Press-Gazette as publisher. The single most powerful third-party trust signal the clinic holds, finally surfaced where AI engines can read it.</p>
+        <ul>
+          <li>Year-by-year Award schema, 2016 to 2025</li>
+          <li>Press-Gazette referenced as the awarding publisher</li>
+          <li>FAQPage block on what the award means</li>
+          <li>Linked to the clinic, the doctors, and the heritage page</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Credential Moat</div>
+        <h3>DABCI Internal Medicine Page</h3>
+        <div class="service-meta"><strong>Dr. Metzler &middot; Person + hasCredential schema</strong> &middot; A credential almost no local competitor holds</div>
+        <p>A dedicated specialty page for chiropractic internal medicine, anchored to Dr. Metzler's DABCI diplomate. Marked up as a post-graduate hasCredential entry tied to the American Board of Chiropractic Internists, scoped honestly to what the credential authorizes per the certifying body.</p>
+        <ul>
+          <li>Person schema for Dr. Metzler with DABCI hasCredential</li>
+          <li>MedicalSpecialty for chiropractic internal medicine</li>
+          <li>Honest scope language reviewed against ABCI guidance</li>
+          <li>FAQPage block for "DABCI chiropractor Wisconsin"</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Family &amp; Prenatal</div>
+        <h3>Webster Technique Prenatal Page</h3>
+        <div class="service-meta"><strong>Dr. Swanson &middot; Webster + FMT + Rocktape schema</strong> &middot; Capture the prenatal search</div>
+        <p>A prenatal and pediatric landing page anchored to Dr. Swanson's Webster Technique certification, written for expectant patients and verified against ICPA scope. Plus a pediatric chiropractic page anchored honestly to the clinic's pediatric work, the page a Green Bay parent searching "pediatric chiropractor Green Bay" should land on.</p>
+        <ul>
+          <li>Person schema for Dr. Swanson with Webster, FMT, Rocktape credentials</li>
+          <li>Prenatal landing page for "Webster Technique Green Bay"</li>
+          <li>Pediatric chiropractic page for family searches</li>
+          <li>ICPA directory profile enhancement</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Capture</div>
+        <h3>Chiropractor Green Bay Capture Pages</h3>
+        <div class="service-meta"><strong>Metro and specialty capture</strong> &middot; The pages that drive new patients</div>
+        <p>The capture pages for the buyer-intent queries that drive new patients: "chiropractor Green Bay," "best chiropractor Green Bay" anchored to the ten Best of The Bay wins, and a four-technique page anchored to Dr. Kirchner's Gonstead, Diversified, Activator, and Cox Flexion Distraction stack. Plus condition-led pages and service-area pages for the metro towns.</p>
+        <ul>
+          <li>"Chiropractor Green Bay" capture page with FAQPage schema</li>
+          <li>"Best chiropractor Green Bay" anchored to the ten Best of The Bay wins</li>
+          <li>Condition-led pages: back pain, neck pain, sciatica, headaches</li>
+          <li>Service-area pages for De Pere, Allouez, Ashwaubenon, Howard, Bellevue</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Foundation</div>
+        <h3>Chiropractor + MedicalBusiness Schema</h3>
+        <div class="service-meta"><strong>The base structured-data layer</strong> &middot; What AI search reads first</div>
+        <p>The foundational JSON-LD layer: Chiropractor, MedicalBusiness, LocalBusiness, Organization, and BreadcrumbList schema on advantagechirogb.com. The schema layer the franchise location ships by default and the independent clinic is currently missing.</p>
+        <ul>
+          <li>Chiropractor + MedicalBusiness + LocalBusiness schema</li>
+          <li>Organization schema with foundingDate 1993</li>
+          <li>BreadcrumbList for site hierarchy</li>
+          <li>Refreshed meta descriptions and Open Graph images sitewide</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Review Velocity</div>
+        <h3>Consent-Based Review Flow</h3>
+        <div class="service-meta"><strong>Review velocity, compliant by design</strong> &middot; Patient-privacy gated</div>
+        <p>A post-visit review-request flow that runs with documented patient consent, in compliance with patient-privacy rules and the Wisconsin Chiropractic Examining Board's advertising rules. Plus the review-schema layer on the clinic's own site that makes Google reviews readable to AI search.</p>
+        <ul>
+          <li>Post-visit review request gated by patient consent</li>
+          <li>Review schema on advantagechirogb.com</li>
+          <li>Wisconsin Chiropractic Examining Board ad-rule review built in</li>
+          <li>Response automation for received reviews</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audit" class="audit">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Audit Snapshot</div>
+      <h2 class="section-title">Five buyer-intent queries. <em>Advantage cited in zero.</em></h2>
+      <p class="section-sub">A live audit run May 2026 across ChatGPT, Perplexity, and Google's AI Overview. The five queries below are the ones a Green Bay patient actually types when shopping for a chiropractor. Advantage Chiropractic Clinic was cited in none of them. The reason is the structured-data gap, not the clinic.</p>
+    </div>
+
+    <div class="audit-table">
+      <div class="audit-row head">
+        <div>Query</div>
+        <div>Advantage today</div>
+        <div>Cited instead</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">chiropractor Green Bay</div>
+        <div class="finding">Not in top results. No Chiropractor or MedicalBusiness schema for AI engines to anchor a citation on.</div>
+        <div class="winner">The Joint Chiropractic franchise, Bay Area Chiropractic, well-optimized independents.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">best chiropractor Green Bay</div>
+        <div class="finding">Not in top results. Ten Best of The Bay wins are present as a static image, not as Award schema AI engines can read.</div>
+        <div class="winner">Directory aggregators, The Joint, well-optimized independents.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">prenatal chiropractor Green Bay</div>
+        <div class="finding">Not capturing. No Webster Technique landing page, no Person schema for Dr. Swanson's certification.</div>
+        <div class="winner">A small set of Webster-certified clinics with proper pages and ICPA directory entries.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">Webster Technique Green Bay</div>
+        <div class="finding">Not capturing. The credential is in ordinary prose, not in hasCredential schema tied to ICPA.</div>
+        <div class="winner">ICPA directory pages, not Advantage.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">DABCI chiropractor Wisconsin</div>
+        <div class="finding">Not capturing. Dr. Metzler's diplomate is in prose with no Person schema and no hasCredential entry.</div>
+        <div class="winner">ACA Council on Diagnosis and Internal Disorders directory pages.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="independent" class="independent">
+  <div class="container independent-grid">
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">Why Independent Matters</div>
+      <h2>Independent, locally owned, <em>and voted Best for a decade.</em></h2>
+      <p>The chiropractic category has consolidated. National franchise chains arrive in a metro, standardize the patient experience, and ship every location page with the same template, the same schema, and the same authority signals. Advantage Chiropractic Clinic of Green Bay is not part of that. It is an independent, locally owned clinic on South Ashland Avenue, and it has been since 1993.</p>
+      <p>For a patient choosing a chiropractor, the distinction is worth understanding. The doctors who recommend a treatment plan are the same doctors who run the clinic. The decisions about scheduling, technique selection, and how a case is managed are made on South Ashland Avenue, by people who live in the community that has voted them Best of The Bay ten years in a row.</p>
+      <ul class="independent-points">
+        <li><strong>Independent ownership.</strong> Owned and run as an independent clinic, not a franchise location.</li>
+        <li><strong>Three doctors, one roster.</strong> Dr. Metzler, Dr. Swanson, and Dr. Kirchner share notes across cases.</li>
+        <li><strong>33 years on South Ashland.</strong> Same address, same independent clinic, since 1993.</li>
+        <li><strong>Best of The Bay, ten in a row.</strong> Community-voted, Press-Gazette readership, unbroken streak.</li>
+        <li><strong>Decisions made here.</strong> Technique, scheduling, and care plans are set inside the clinic.</li>
+      </ul>
+    </div>
+    <div class="independent-side">
+      <div class="tag">The Difference</div>
+      <h3>A 33-year clinic, voted Best of The Bay by Green Bay a decade running.</h3>
+      <div class="divider"></div>
+      <p>When a chiropractic clinic is independent and locally owned, the doctors who set the philosophy are the same doctors who deliver the care. There is no franchise office setting the protocol from out of state. The community votes that say so are not a coincidence; they are the record of a clinic that has answered to its patients for 33 years and has stayed accountable to them long enough to win Best of The Bay ten years in a row.</p>
+    </div>
+  </div>
+</section>
+
+<section id="areas" class="areas">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Areas We Serve</div>
+      <h2 class="section-title">On South Ashland Avenue. <em>For the whole Green Bay metro.</em></h2>
+      <p class="section-sub">Advantage Chiropractic Clinic sits at 1804 South Ashland Avenue in Green Bay, with patients coming in from across the metro and Northeast Wisconsin. The DABCI internist credential draws patients from a wider area than a typical local chiropractic catchment.</p>
+    </div>
+
+    <div class="areas-grid">
+      <div class="area-pill"><div class="city">Green Bay</div><div class="miles">Our home</div></div>
+      <div class="area-pill"><div class="city">De Pere</div><div class="miles">5 mi</div></div>
+      <div class="area-pill"><div class="city">Allouez</div><div class="miles">3 mi</div></div>
+      <div class="area-pill"><div class="city">Ashwaubenon</div><div class="miles">3 mi</div></div>
+      <div class="area-pill"><div class="city">Howard</div><div class="miles">6 mi</div></div>
+      <div class="area-pill"><div class="city">Bellevue</div><div class="miles">5 mi</div></div>
+      <div class="area-pill"><div class="city">Suamico</div><div class="miles">10 mi</div></div>
+      <div class="area-pill"><div class="city">Northeast WI</div><div class="miles">regional</div></div>
+    </div>
+
+    <p class="areas-note">If your community is not on this list and you are looking for an independent chiropractor in the Green Bay or Northeast Wisconsin catchment, the front desk is the right next step.</p>
+  </div>
+</section>
+
+<section id="newpatients" class="newpt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">New Patients</div>
+      <h2 class="section-title">Becoming a patient <em>is straightforward.</em></h2>
+      <p class="section-sub">Advantage Chiropractic Clinic welcomes new patients on South Ashland Avenue. The first visit is about getting to know you, reviewing your history, and matching you with the doctor and the technique that fit your case.</p>
+    </div>
+
+    <div class="newpt-grid">
+      <div class="newpt-step">
+        <div class="step-num">1</div>
+        <h4>Call the clinic</h4>
+        <p>Reach the front desk at (920) 432-7774. The team will answer your questions about the doctors, the techniques, and the credentials, and find a first-visit time that works for you.</p>
+      </div>
+      <div class="newpt-step">
+        <div class="step-num">2</div>
+        <h4>Your first visit</h4>
+        <p>The first appointment includes a review of your history, an exam, and a conversation about what you are hoping the clinic can help with. The doctor matches the technique to your case, not the other way around.</p>
+      </div>
+      <div class="newpt-step">
+        <div class="step-num">3</div>
+        <h4>A plan that fits</h4>
+        <p>You leave with a clear picture of your situation and a care plan built around it, from a team that has worked together long enough to share notes across the case roster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="whynow" class="whynow">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Why Now</div>
+      <h2 class="section-title">Three reasons this is a 2026 fix, <em>not a 2028 one.</em></h2>
+      <p class="section-sub">The 33-year tenure, the ten Best of The Bay wins, the DABCI, and the Webster certification are permanent. The invisibility does not have to be. Three reasons the timing matters.</p>
+    </div>
+
+    <div class="whynow-grid">
+      <div class="whynow-card">
+        <div class="tag">Reason 1</div>
+        <h4>AI search adoption is on a curve, not a plateau.</h4>
+        <p>Patients choosing a chiropractor already use ChatGPT and Perplexity to shortlist. Clinics cited now build a moat that compounds. Every month without schema is a month the gap with the franchise widens.</p>
+      </div>
+      <div class="whynow-card">
+        <div class="tag">Reason 2</div>
+        <h4>The specialty queries are uncontested locally.</h4>
+        <p>"Prenatal chiropractor Green Bay," "Webster Technique Green Bay," and "DABCI chiropractor Wisconsin" are not yet owned by a competitor at the metro level. The clinic that builds those pages with proper schema first will hold them for years.</p>
+      </div>
+      <div class="whynow-card">
+        <div class="tag">Reason 3</div>
+        <h4>The family and prenatal pool compounds.</h4>
+        <p>A prenatal patient who finds the clinic via Webster Technique search often stays through delivery, returns postpartum, and brings the child in for pediatric care. Capturing them now is capturing a household, not a single visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Frequently Asked</div>
+      <h2 class="section-title">What patients ask <em>before booking.</em></h2>
+      <p class="section-sub">Six questions the clinic hears from new patients. If yours is not here, the front desk is the right next step.</p>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>How long has Advantage Chiropractic Clinic been open?</h4>
+        <p>Advantage Chiropractic Clinic of Green Bay was founded in 1993 and has cared for patients at 1804 South Ashland Avenue ever since. Thirty-three years of independent practice in Northeast Wisconsin.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Who are the doctors?</h4>
+        <p>Three. Dr. Cheryl Metzler, DC, DABCI (Diplomate of the American Board of Chiropractic Internists). Dr. Jon Swanson, DC, Webster Technique certified, with FMT and Rocktape. Dr. Alexander Kirchner, DC, who works across Gonstead, Diversified, Activator, and Cox Flexion Distraction techniques. Together the team holds more than 65 years of combined clinical experience.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What is the DABCI credential?</h4>
+        <p>DABCI is the Diplomate of the American Board of Chiropractic Internists, a post-graduate diplomate that qualifies a chiropractor to consult on internal-disorder presentations alongside spinal care. The credential is held by a short list of chiropractors in Wisconsin, statewide. Dr. Metzler holds it.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you offer prenatal and pediatric chiropractic?</h4>
+        <p>Yes. Dr. Jon Swanson is certified in the Webster Technique, a recognized prenatal chiropractic certification recognized by the International Chiropractic Pediatric Association. The clinic also sees pediatric patients, with care scoped to what the credentials and the patient case warrant.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What is "Best of The Bay" and how many wins does the clinic have?</h4>
+        <p>Best of The Bay is the Green Bay Press-Gazette's community-voted recognition program, decided by readership ballot each year. Advantage Chiropractic Clinic has won the chiropractic category ten years in a row, an unbroken streak from 2016 through 2025.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do I become a new patient?</h4>
+        <p>Call the clinic at (920) 432-7774. The front desk will answer your questions about the doctors, the techniques, and the credentials, and schedule a first visit that fits your case. The clinic is at 1804 South Ashland Avenue, Green Bay, WI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="final-cta">
+  <div class="container">
+    <h2>A Green Bay chiropractic clinic <em>since 1993.</em></h2>
+    <p>Advantage Chiropractic Clinic of Green Bay has cared for patients on South Ashland Avenue for 33 years, independent and locally owned the entire time. Three doctors, a DABCI internist, a Webster-certified prenatal specialist, a four-technique chiropractor, and ten consecutive Best of The Bay wins. New patients are welcome.</p>
+    <div class="final-actions">
+      <a href="tel:9204327774" class="cta-btn cta-btn-cream">Request a Visit</a>
+      <div class="phone-large"><div><small>Advantage Chiropractic</small>(920) 432-7774</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          Advantage Chiropractic Clinic
+          <small>Green Bay &middot; Since 1993 &middot; 10-Time Best of The Bay</small>
+        </div>
+        <div class="foot-tag">Independent chiropractic care</div>
+        <p style="font-size: 14px; line-height: 1.7;">An independent chiropractic clinic at 1804 South Ashland Avenue in Green Bay, Wisconsin, in continuous practice since 1993. Three doctors: Dr. Cheryl Metzler, DC, DABCI; Dr. Jon Swanson, DC (Webster Technique, FMT, Rocktape); and Dr. Alexander Kirchner, DC (Gonstead, Diversified, Activator, Cox Flexion Distraction). Voted Best of The Bay ten years in a row by the Green Bay Press-Gazette readership.</p>
+      </div>
+      <div>
+        <h5>Visit the Clinic</h5>
+        <ul>
+          <li>1804 South Ashland Avenue</li>
+          <li>Green Bay, WI</li>
+          <li><br></li>
+          <li><a href="tel:9204327774">(920) 432-7774</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Doctors</h5>
+        <ul>
+          <li>Dr. Cheryl Metzler, DC, DABCI</li>
+          <li>Dr. Jon Swanson, DC</li>
+          <li>Dr. Alexander Kirchner, DC</li>
+          <li><br></li>
+          <li>65+ combined years</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Care</h5>
+        <ul>
+          <li><a href="#stage">Best of The Bay</a></li>
+          <li><a href="#services">DABCI Internal Medicine</a></li>
+          <li><a href="#services">Webster Technique Prenatal</a></li>
+          <li><a href="#services">Four-Technique Chiropractic</a></li>
+          <li><a href="#services">Capture Pages</a></li>
+          <li><a href="#services">Review Velocity</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="row">
+        <div>&copy; 2026 Advantage Chiropractic Clinic of Green Bay. Independent, locally owned chiropractic care on South Ashland Avenue, est. 1993. Best of The Bay 2016 through 2025.</div>
+        <div>Demo by AG1 Consulting &middot; <a class="signoff-link" href="https://andrei170.github.io/ag1/#services">andrei170.github.io/ag1/#services</a></div>
+      </div>
+      <div class="foot-disclaimer">
+        Advantage Chiropractic Clinic of Green Bay is an independent chiropractic clinic. Demo concepts shown for illustration only; subject to compliance review. This page is an illustrative marketing mockup prepared by AG1 Consulting to demonstrate a search-optimized website concept. It is not the official website of Advantage Chiropractic Clinic of Green Bay, it is not chiropractic or medical advice, and it does not establish a doctor-patient relationship. All clinical descriptions are general in nature. Every clinical claim, credential, specialty scope (including the DABCI diplomate scope and the Webster Technique certification scope), service description, award reference, and patient testimonial must be reviewed, verified, and approved by the clinic under the Wisconsin Department of Safety and Professional Services Chiropractic Examining Board rules and standard chiropractic-advertising rules before any production use.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://advantagechirogb.com/#organization",
+      "name": "Advantage Chiropractic Clinic of Green Bay",
+      "foundingDate": "1993",
+      "description": "Independent, locally owned chiropractic clinic in Green Bay, Wisconsin, in continuous practice on South Ashland Avenue since 1993. Three doctors: Dr. Cheryl Metzler (DABCI), Dr. Jon Swanson (Webster Technique), and Dr. Alexander Kirchner (Gonstead, Diversified, Activator, Cox Flexion Distraction). Ten consecutive Best of The Bay wins from the Green Bay Press-Gazette readership.",
+      "url": "https://advantagechirogb.com/",
+      "telephone": "+1-920-432-7774",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1804 South Ashland Avenue",
+        "addressLocality": "Green Bay",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "award": [
+        "Best of The Bay 2016, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2017, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2018, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2019, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2020, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2021, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2022, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2023, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2024, Green Bay Press-Gazette, Chiropractic category",
+        "Best of The Bay 2025, Green Bay Press-Gazette, Chiropractic category"
+      ]
+    },
+    {
+      "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
+      "@id": "https://advantagechirogb.com/#clinic",
+      "name": "Advantage Chiropractic Clinic of Green Bay",
+      "description": "Independent chiropractic clinic at 1804 South Ashland Avenue, Green Bay, Wisconsin. Three doctors, a DABCI internist on staff, Webster Technique prenatal certification, and a four-technique chiropractic stack. Ten consecutive Best of The Bay wins.",
+      "url": "https://advantagechirogb.com/",
+      "telephone": "+1-920-432-7774",
+      "foundingDate": "1993",
+      "parentOrganization": { "@id": "https://advantagechirogb.com/#organization" },
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1804 South Ashland Avenue",
+        "addressLocality": "Green Bay",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Green Bay, WI" },
+        { "@type": "Place", "name": "De Pere, WI" },
+        { "@type": "Place", "name": "Allouez, WI" },
+        { "@type": "Place", "name": "Ashwaubenon, WI" },
+        { "@type": "Place", "name": "Howard, WI" },
+        { "@type": "Place", "name": "Bellevue, WI" },
+        { "@type": "Place", "name": "Suamico, WI" },
+        { "@type": "Place", "name": "Northeast Wisconsin" }
+      ],
+      "employee": [
+        { "@id": "https://advantagechirogb.com/#drmetzler" },
+        { "@id": "https://advantagechirogb.com/#drswanson" },
+        { "@id": "https://advantagechirogb.com/#drkirchner" }
+      ],
+      "medicalSpecialty": "Chiropractic",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Chiropractic adjustment" },
+        { "@type": "MedicalProcedure", "name": "Back pain chiropractic care" },
+        { "@type": "MedicalProcedure", "name": "Neck pain chiropractic care" },
+        { "@type": "MedicalProcedure", "name": "Prenatal chiropractic via Webster Technique" },
+        { "@type": "MedicalProcedure", "name": "Pediatric chiropractic" },
+        { "@type": "MedicalProcedure", "name": "Chiropractic internal-disorder consultation (DABCI)" },
+        { "@type": "MedicalProcedure", "name": "Gonstead technique chiropractic" },
+        { "@type": "MedicalProcedure", "name": "Diversified technique chiropractic" },
+        { "@type": "MedicalProcedure", "name": "Activator technique chiropractic" },
+        { "@type": "MedicalProcedure", "name": "Cox Flexion Distraction technique chiropractic" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://advantagechirogb.com/#drmetzler",
+      "name": "Dr. Cheryl Metzler, DC, DABCI",
+      "jobTitle": "Doctor of Chiropractic, Diplomate of the American Board of Chiropractic Internists",
+      "worksFor": { "@id": "https://advantagechirogb.com/#clinic" },
+      "description": "Doctor of Chiropractic and Diplomate of the American Board of Chiropractic Internists (DABCI). The DABCI is a post-graduate credential that qualifies a chiropractor to consult on internal-disorder presentations alongside spinal care, scoped to what the certifying body authorizes.",
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Doctor of Chiropractic" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Diplomate, American Board of Chiropractic Internists (DABCI)", "recognizedBy": { "@type": "Organization", "name": "American Board of Chiropractic Internists" } }
+      ],
+      "knowsAbout": ["Chiropractic internal medicine", "Chiropractic adjustment", "Spinal care"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://advantagechirogb.com/#drswanson",
+      "name": "Dr. Jon Swanson, DC",
+      "jobTitle": "Doctor of Chiropractic, Webster Technique certified",
+      "worksFor": { "@id": "https://advantagechirogb.com/#clinic" },
+      "description": "Doctor of Chiropractic with Webster Technique certification for prenatal and pediatric chiropractic, plus FMT (Functional Movement Techniques) and Rocktape credentials. Webster Technique is recognized by the International Chiropractic Pediatric Association (ICPA).",
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Doctor of Chiropractic" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Webster Technique Certification", "recognizedBy": { "@type": "Organization", "name": "International Chiropractic Pediatric Association" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "FMT (Functional Movement Techniques)" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Rocktape" }
+      ],
+      "knowsAbout": ["Prenatal chiropractic", "Pediatric chiropractic", "Webster Technique", "Functional movement"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://advantagechirogb.com/#drkirchner",
+      "name": "Dr. Alexander Kirchner, DC",
+      "jobTitle": "Doctor of Chiropractic",
+      "worksFor": { "@id": "https://advantagechirogb.com/#clinic" },
+      "description": "Doctor of Chiropractic working across four distinct chiropractic techniques: Gonstead, Diversified, Activator, and Cox Flexion Distraction. The technique is selected to match the patient case rather than the clinic protocol.",
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Doctor of Chiropractic" }
+      ],
+      "knowsAbout": ["Gonstead technique", "Diversified technique", "Activator technique", "Cox Flexion Distraction technique"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://advantagechirogb.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long has Advantage Chiropractic Clinic been open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Advantage Chiropractic Clinic of Green Bay was founded in 1993 and has cared for patients at 1804 South Ashland Avenue ever since. Thirty-three years of independent practice in Northeast Wisconsin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who are the doctors at Advantage Chiropractic Clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three. Dr. Cheryl Metzler, DC, DABCI (Diplomate of the American Board of Chiropractic Internists). Dr. Jon Swanson, DC, Webster Technique certified, with FMT and Rocktape. Dr. Alexander Kirchner, DC, who works across Gonstead, Diversified, Activator, and Cox Flexion Distraction techniques. Together the team holds more than 65 years of combined clinical experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the DABCI credential?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DABCI is the Diplomate of the American Board of Chiropractic Internists, a post-graduate diplomate that qualifies a chiropractor to consult on internal-disorder presentations alongside spinal care. The credential is held by a short list of chiropractors in Wisconsin, statewide. Dr. Cheryl Metzler holds it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer prenatal and pediatric chiropractic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Jon Swanson is certified in the Webster Technique, a recognized prenatal chiropractic certification recognized by the International Chiropractic Pediatric Association. The clinic also sees pediatric patients, with care scoped to what the credentials and the patient case warrant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Best of The Bay and how many wins does the clinic have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Best of The Bay is the Green Bay Press-Gazette's community-voted recognition program, decided by readership ballot each year. Advantage Chiropractic Clinic has won the chiropractic category ten years in a row, an unbroken streak from 2016 through 2025."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I become a new patient at Advantage Chiropractic Clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call the clinic at (920) 432-7774. The front desk will answer your questions about the doctors, the techniques, and the credentials, and schedule a first visit that fits your case. The clinic is at 1804 South Ashland Avenue, Green Bay, WI."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
